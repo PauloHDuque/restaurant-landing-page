@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Box Emporium</title>
+</head>
+
+<body>
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-chevron-up scrolltop__icon'></i>
+  </a>
+
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Box Emporium </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Início</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Sobre nós</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Serviços</a></li>
+          <li class="nav__item"><a href="#menu" class="nav__link">Pratos</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+
+          <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu bx-burst' style='color:#00030a'></i>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--========== HOME ==========-->
+    <section class="home" id="home">
+
+      <video class="home__video" autoplay muted loop>
+        <source src="./video/home.mp4" type="video/mp4">
+      </video>
+
+      <div class="home__container bd-container bd-grid">
+        <div class="home__data">
+          <h1 class="home__title">Box Emporium Bistrô</h1>
+          <h2 class="home__subtitle">A arte da cozinha italiana, servida<br> com paixão.</h2>
+          <a href="#" class="button">Confira o cardápio</a>
+        </div>
+
+        <img src="img/home.jpg" alt="" class="home__img">
+      </div>
+    </section>
+
+      <!--========== ABOUT ==========-->
+    <section class="about section bd-container" id="about">
+      <div class="about__container  bd-grid">
+        <div class="about__data">
+          <span class="section-subtitle about__initial">Sobre nós</span>
+          <h2 class="section-title about__initial">Do Coração da Itália  <br> para a Sua Mesa</h2>
+          <p class="about__description">Somos um restaurante italiano apaixonado por tradição e sabor. Desde a nossa fundação, temos nos esforçado para criar um ambiente acolhedor, onde cada cliente se sinta em casa. Venha nos visitar e descubra por que o Box Emporium é muito mais do que um restaurante. É um pedacinho da Itália no coração da sua cidade.
+
+            Buon appetito!</p>
+          <a href="https://maps.app.goo.gl/rnbJ8rjyAcpj6ji26" class="button">Encontre-nos</a>
+        </div>
+
+          <img src="img/about.jpg" alt="" class="about__img">
+      </div>
+    </section>
+
+    <!--========== SERVICES ==========-->
+    <section class="services section bd-container" id="services">
+      <span class="section-subtitle">Serviços</span>
+      <h2 class="section-title">O que oferecemos a você</h2>
+
+      <div class="services__container  bd-grid">
+        <div class="services__content">
+          <img src="./img/dish.png" alt="">
+          <h3 class="services__title">Comida Excelente</h3>
+          <p class="services__description">Nossa paixão é criar pratos italianos autênticos e deliciosos. Cada receita é preparada com ingredientes frescos e amor. De massas artesanais a risotos saborosos, nossa comida excelente é uma celebração da tradição culinária italiana.</p>
+        </div>
+
+        <div class="services__content">
+          <img src="./img/shelves.png" alt="mercearia-img">
+          <h3 class="services__title">Mercearia</h3>
+          <p class="services__description">Além de servir refeições no nosso restaurante, oferecemos uma mercearia com produtos italianos selecionados. Aqui, você encontrará massas exclusivas, azeites aromáticos, queijos especiais e muito mais. Leve um pedacinho da Itália para sua casa!</p>
+        </div>
+
+        <div class="services__content">
+          <img src="./img/fast-delivery.png" alt="delivery-img">
+          <h3 class="services__title">Delivery</h3>
+          <p class="services__description">Não tem tempo para sair? Não se preocupe! Nosso serviço de delivery traz o sabor do Box Emporium até você. Peça suas refeições favoritas e desfrute da autêntica cozinha italiana no conforto do seu lar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!--========== MENU ==========-->
+    <section class="menu section bd-container" id="menu">
+      <span class="section-subtitle">Pratos</span>
+      <h2 class="section-title">Conheça alguns de nossos pratos</h2>
+
+      <div class="menu__container bd-grid">
+        <div class="menu__content">
+          <img src="img/salmao.png" alt="" class="menu__img">
+          <h3 class="menu__name">Salmão Grelhado</h3>
+          <span class="menu__detail">Salmão ao molho de laranja e Risoto de espinafre</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/risoto-camarao.png" alt="" class="menu__img">
+          <h3 class="menu__name">Risoto de caramão</h3>
+          <span class="menu__detail">Risoto de parmesão com camarões selados, redução de tangerina e azeite de ervas</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/crepe-file.png" alt="" class="menu__img">
+          <h3 class="menu__name">Crepe Filé ao Funghi</h3>
+          <span class="menu__detail">crepe recheado com mozzarela e tiras de filé mignon ao molho fungui</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/steak-poutine.png" alt="" class="menu__img">
+          <h3 class="menu__name">Steak Poutine</h3>
+          <span class="menu__detail">Entrada de fritas com tiras de filé mignon, molho de vinho e fondue de queijo</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/camarao-box.png" alt="" class="menu__img">
+          <h3 class="menu__name">Camarão à moda box emporium</h3>
+          <span class="menu__detail">Entrada de camarões empanados acompanhado por geleia de pimenta e redução de acerola</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/tabua-frios.png" alt="" class="menu__img">
+          <h3 class="menu__name">Tábuas de frio</h3>
+          <span class="menu__detail">Diversos tipos podem ser montados, consulte nossos atendentes para montagem de tábua personalizada</span>
+        </div>
+      </div>
+    </section>
+
+    <!--========== CONTACT US ==========-->
+    <section class="contact section bd-container" id="contact">
+      <div class="contact__container bd-grid">
+        <div class="contact__data">
+          <span class="section-subtitle contact__initial">Fale Conosco</span>
+          <h2 class="section-title contact__initial">Entre em contato</h2>
+          <p class="contact__description">Se você deseja realizar um pedido ou reservar uma mesa, no envie uma mensagem e iremos responder o mais breve possível</p>
+        </div>
+
+        <div class="contact__button">
+          <a href="https://wa.me/+5587991046363" class="button" target="_blank">Entre em contato agora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!--========== FOOTER ==========-->
+  <footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">Box Emporium</a>
+        <span class="footer__description">Restaurante</span>
+        <div>
+          <a href="https://www.facebook.com/boxeporium/" class="footer__social" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://instagram.com/boxemporium" class="footer__social" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Serviços</h3>
+        <ul>
+          <li><p>Delivery</p></li>
+          <li><p>Eventos corporativos</p></li>
+          <li><p>Eventos em geral</p></li>
+          <li><p>Reserva de mesa</p></li>
+          <li><p>Tábuas de frio</p></li>
+          <li><p>Vinhos</p></li>
+        </ul>
+      </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Horários</h3>
+          <ul>
+            <li><p>Segunda a Quinta:</></li>
+            <li><p>15h às 22h</></li>
+            <li><p>Sexta e Sábado:</></li>
+            <li><p>15h às 00h</></li>
+            <li><p>Domingos:</p></li>
+            <li><p>11h às 16h</p></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Endereço</h3>
+          <ul>
+            <a href="https://maps.app.goo.gl/rnbJ8rjyAcpj6ji26" class="footer__link">Travessa Júlio Brasileiro, 165, Heliópolis</a>
+            <li>Garanhuns - PE</li>
+            <li>(87)9 9104-6363</li>
+            <a href="mailto:boxemporium@gmail.com" class="footer__link">boxemporium@gmail.com</a>
+          </ul>
+        </div>
+    </div>
+
+    <p class="footer__copy">&#169; PHBD .All right reserved</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
