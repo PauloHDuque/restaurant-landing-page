@@ -3,10 +3,8 @@ const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),
   nav = document.getElementById(navId)
     
-    // Valida que as variáveis existem
   if(toggle && nav){
     toggle.addEventListener('click', ()=>{
-        // adiciona a class show-menu para a tag div com nav__menu class
         nav.classList.toggle('show-menu')
     })
   }
@@ -18,7 +16,6 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
   const navMenu = document.getElementById('nav-menu')
-  // Quando clica no nav__link, remove show-menu class
   navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
