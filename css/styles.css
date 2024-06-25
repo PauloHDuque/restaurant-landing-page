@@ -1,5 +1,11 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+@font-face {
+  font-family: 'Farmhand';
+  src: url('../fonts/Farmhand-Regular.woff2') format('woff2'),
+      url('../fonts/Farmhand-Regular.woff') format('woff'),
+      url('../fonts/Farmhand-Regular.eot');
+}
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -8,24 +14,24 @@
   /*========== Colors ==========*/
   --first-color: #e08f12;
   --first-color-alt: #e08f12;
-  --title-color: #393939;
-  --text-color: #707070;
   --text-color-light: #a6a6a6;
-  --body-color: #fbfefd;
-  --container-color: #ffffff;
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
+  --body-color: #1d2521;
+  --container-color: #27302c;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --body-font: "Farmhand", sans-serif;
+  --biggest-font-size: 2.75rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --normal-font-size: 1.438rem;
+  --small-font-size: 1.2rem;
+  --smaller-font-size: 1.25rem;
 
   /*========== Font weight ==========*/
-  --font-medium: 500;
+  --font-medium: 400;
   --font-semi-bold: 600;
 
   /*========== Margenes ==========*/
@@ -43,13 +49,13 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
+    --biggest-font-size: 4.5rem;
+  --h1-font-size: 2.75rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.75rem;
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1.375rem;
+  --smaller-font-size: 1.313rem;
   }
 }
 
@@ -66,21 +72,22 @@ html {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: #f1f3f2;
-  --text-color: #c7d1cc;
-  --body-color: #1d2521;
-  --container-color: #27302c;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #a6a6a6;
+  --body-color: #fbfefd;
+  --container-color: #ffffff;
 }
 
 body.dark-theme .home {
-  background: linear-gradient(to bottom, rgba(55, 55, 55, 0.6) 20%, var(--container-color) 100%);
+  background: linear-gradient(to bottom, rgba(242, 242, 242, 0.6) 20%, rgba(255, 255, 255, 1) 100%);
 }
 
 body.dark-theme .scrolltop{
-  background-color: #e08f12;
+  background-color: #670c20;
 }
 body.dark-theme .scrolltop:hover{
-  background-color: #670c20;
+  background-color: var(--first-color-alt);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -246,7 +253,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.3rem;
-  background: rgb(103, 12, 32, 0.8);
+  background: #e08f12;
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
@@ -254,7 +261,7 @@ img {
 }
 
 .scrolltop:hover {
-  background-color: var(--first-color-alt);
+  background-color: #670c20;;
 }
 
 .scrolltop__icon {
@@ -281,7 +288,7 @@ img {
 
 .home{
   position: relative;
-  background: linear-gradient(to bottom, rgba(242, 242, 242, 0.6) 20%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to bottom, rgba(55, 55, 55, 0.6) 20%, var(--container-color) 100%);
 }
 .home__container {
   height: calc(100vh - var(--header-height));
@@ -298,12 +305,6 @@ img {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-4);
-}
-
-.home__img {
-  width: 600px;
-  justify-self: center;
-  border-radius: 10px;
 }
 
 
@@ -362,6 +363,7 @@ img {
 
 .services__description {
   padding: 0 1.5rem;
+  font-weight: 100;
 }
 
 /*========== MENU ==========*/
@@ -387,7 +389,7 @@ img {
 }
 
 .menu__name{
-  font-weight: var(--font-semi-bold);
+  font-weight: 400;
   color: var(--title-color);
 }
 
@@ -397,20 +399,10 @@ img {
 
 .menu__detail{
   font-size: var(--small-font-size);
-}
-
-.menu__detail {
   margin-bottom: var(--mb-1);
+  padding: 0.5rem;
 }
 
-.menu__button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  padding: 0.625rem 0.813rem;
-  border-radius: 0.5rem 0 0.5rem 0;
-}
 
 /*========== CONTACT ==========*/
 .contact__container {
@@ -440,7 +432,7 @@ img {
 }
 
 .footer__social {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--title-color);
   margin-right: var(--mb-2);
 }
