@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <title>Box Emporium</title>
 </head>
@@ -16,7 +18,7 @@
 
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="#" class="nav__logo">Box Emporium </a>
+      <a href="#" class="nav__logo">Box Emporium</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link active-link">Início</a></li>
@@ -30,7 +32,7 @@
       </div>
 
       <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu bx-burst' style='color:#00030a'></i>
+        <i class='bx bx-menu' style='color:#00030a'></i>
       </div>
 
     </nav>
@@ -47,11 +49,31 @@
       <div class="home__container bd-container bd-grid">
         <div class="home__data">
           <h1 class="home__title">Box Emporium Bistrô</h1>
-          <h2 class="home__subtitle">A arte da cozinha italiana, servida<br> com paixão.</h2>
-          <a href="#" class="button">Confira o cardápio</a>
+          <h2 class="home__subtitle">A arte da cozinha, servida  <span class="home__sub"> com paixão.</span></h2>
+          <a href="https://wa.me/p/6329751617122739/558791046363" class="button" target="_blank">Confira o cardápio</a>
         </div>
 
-        <img src="img/home.jpg" alt="" class="home__img">
+        <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img id="fImg" src="./img/home.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./img/home02.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/home03.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -60,11 +82,10 @@
       <div class="about__container  bd-grid">
         <div class="about__data">
           <span class="section-subtitle about__initial">Sobre nós</span>
-          <h2 class="section-title about__initial">Do Coração da Itália  <br> para a Sua Mesa</h2>
-          <p class="about__description">Somos um restaurante italiano apaixonado por tradição e sabor. Desde a nossa fundação, temos nos esforçado para criar um ambiente acolhedor, onde cada cliente se sinta em casa. Venha nos visitar e descubra por que o Box Emporium é muito mais do que um restaurante. É um pedacinho da Itália no coração da sua cidade.
-
-            Buon appetito!</p>
-          <a href="https://maps.app.goo.gl/rnbJ8rjyAcpj6ji26" class="button">Encontre-nos</a>
+          <h2 class="section-title about__initial">Uma Viagem <span class="about__sub">Gastronômica</span>  <br> à Sua Mesa</h2>
+          <p class="about__description">Somos um restaurante apaixonado pela culinária internacional e por proporcionar experiências gastronômicas memoráveis. Desde a nossa fundação, temos nos dedicado a criar um ambiente acolhedor, onde cada cliente se sinta especial. Venha nos visitar e descubra por que o Box Emporium vai além de um restaurante comum. É uma viagem gastronômica pelo mundo, no coração da sua cidade.
+</p>
+          <a href="https://maps.app.goo.gl/rnbJ8rjyAcpj6ji26" class="button" target="_blank">Encontre-nos</a>
         </div>
 
           <img src="img/about.jpg" alt="" class="about__img">
@@ -80,19 +101,20 @@
         <div class="services__content">
           <img src="./img/dish.png" alt="">
           <h3 class="services__title">Comida Excelente</h3>
-          <p class="services__description">Nossa paixão é criar pratos italianos autênticos e deliciosos. Cada receita é preparada com ingredientes frescos e amor. De massas artesanais a risotos saborosos, nossa comida excelente é uma celebração da tradição culinária italiana.</p>
+          <p class="services__description">Nossa paixão é criar pratos autênticos e deliciosos de várias partes do mundo. Cada receita é preparada com ingredientes frescos e muito cuidado. De sabores exóticos a clássicos reconfortantes, nossa comida excelente é uma celebração da diversidade culinária internacional.
+          </p>
         </div>
 
         <div class="services__content">
           <img src="./img/shelves.png" alt="mercearia-img">
           <h3 class="services__title">Mercearia</h3>
-          <p class="services__description">Além de servir refeições no nosso restaurante, oferecemos uma mercearia com produtos italianos selecionados. Aqui, você encontrará massas exclusivas, azeites aromáticos, queijos especiais e muito mais. Leve um pedacinho da Itália para sua casa!</p>
+          <p class="services__description">Além de servir refeições no nosso restaurante, oferecemos uma mercearia com produtos italianos e importados selecionados. Aqui, você encontrará massas exclusivas, azeites aromáticos, queijos especiais e muito mais. Leve um pedacinho da alta gastronomia para sua casa!</p>
         </div>
 
         <div class="services__content">
           <img src="./img/fast-delivery.png" alt="delivery-img">
           <h3 class="services__title">Delivery</h3>
-          <p class="services__description">Não tem tempo para sair? Não se preocupe! Nosso serviço de delivery traz o sabor do Box Emporium até você. Peça suas refeições favoritas e desfrute da autêntica cozinha italiana no conforto do seu lar.
+          <p class="services__description">Não tem tempo para sair? Não se preocupe! Nosso serviço de delivery traz o sabor do Box Emporium até você. Peça seus pratos favoritos e desfrute da autêntica experiência gastronômica no conforto do seu lar.
           </p>
         </div>
       </div>
@@ -112,7 +134,7 @@
         </div>
 
         <div class="menu__content">
-          <img src="img/risoto-camarao.png" alt="" class="menu__img">
+          <img id="fImg" src="img/risoto-camarao.png" alt="" class="menu__img">
           <h3 class="menu__name">Risoto de caramão</h3>
           <span class="menu__detail">Risoto de parmesão com camarões selados, redução de tangerina e azeite de ervas</span>
         </div>
@@ -124,8 +146,27 @@
         </div>
 
         <div class="menu__content">
-          <img src="img/steak-poutine.png" alt="" class="menu__img">
-          <h3 class="menu__name">Steak Poutine</h3>
+          <img src="img/steak-box.png" alt="" class="menu__img">
+          <h3 class="menu__name">Steak Box</h3>
+          <span class="menu__detail">Tornedor de filé mignon, flambado ao conhaque e molho de mostarda dijon, acompanhado de spaghetti na manteiga</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/parmegiana.png" alt="" class="menu__img">
+          <h3 class="menu__name">Filé à Parmegiana</h3>
+          <span class="menu__detail">Filé empanado com queijo mozzarela e parmesão acompanhado de spaghetti na manteiga e ao suco de tomate
+          <br>(serve 3 pessoas)</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/gamberi-box.png" alt="" class="menu__img">
+          <h3 class="menu__name">Gamberi Box</h3>
+          <span class="menu__detail">Camarão flambado, molho cremoso de Catupiry&#174; e mostarda, acompanhado de spaghetti</span>
+        </div>
+
+        <div class="menu__content">
+          <img src="img/varal-parma.png" alt="" class="menu__img">
+          <h3 class="menu__name">Varal de Parma</h3>
           <span class="menu__detail">Entrada de fritas com tiras de filé mignon, molho de vinho e fondue de queijo</span>
         </div>
 
@@ -164,11 +205,10 @@
   <footer class="footer section bd-container">
     <div class="footer__container bd-grid">
       <div class="footer__content">
-        <a href="#" class="footer__logo">Box Emporium</a>
-        <span class="footer__description">Restaurante</span>
+        <img src="./img/logo.jpeg" class="footer__logo"></>
+      
         <div>
-          <a href="https://www.facebook.com/boxeporium/" class="footer__social" target="_blank"><i class='bx bxl-facebook'></i></a>
-          <a href="https://instagram.com/boxemporium" class="footer__social" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://instagram.com/boxemporium" class="footer__social" target="_blank"><i class='bx bxl-instagram'>boxemporium</i></a>
         </div>
       </div>
 
@@ -199,7 +239,7 @@
         <div class="footer__content">
           <h3 class="footer__title">Endereço</h3>
           <ul>
-            <a href="https://maps.app.goo.gl/rnbJ8rjyAcpj6ji26" class="footer__link">Travessa Júlio Brasileiro, 165, Heliópolis</a>
+            <a href="https://maps.app.goo.gl/rnbJ8rjyAcpj6ji26" class="footer__link" target="_blank">Travessa Júlio Brasileiro, 165, Heliópolis</a>
             <li>Garanhuns - PE</li>
             <li>(87)9 9104-6363</li>
             <a href="mailto:boxemporium@gmail.com" class="footer__link">boxemporium@gmail.com</a>
@@ -207,9 +247,11 @@
         </div>
     </div>
 
-    <p class="footer__copy">&#169; PHBD .All right reserved</p>
+    <p class="footer__copy"> Box Emporium &copy;2024. All right reserved<a class="easterEgg" href="https://github.com/PauloHDuque">.</a></p>
+    
   </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 
