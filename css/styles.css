@@ -324,6 +324,14 @@ img {
   color: var(--first-color);
 }
 
+.home__video::-webkit-media-controls,
+.home__video::-moz-media-controls,
+.home__video::-ms-media-controls,
+.home__video::-o-media-controls,
+.home__video::-khtml-media-controls {
+    display: none !important;
+}
+
 #fImg{
   filter: brightness(1.2) contrast(1.1);
 }
